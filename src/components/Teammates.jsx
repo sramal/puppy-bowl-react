@@ -1,5 +1,4 @@
 export default function Teammates({ singlePlayer }) {
-    console.log(singlePlayer);
     return (
         <div id="teammates-container" className="container text-center">
             <div className="row">

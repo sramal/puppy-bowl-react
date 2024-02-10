@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { fetchAllPlayers, createNewPlayer } from "./Utils";
 
-export default function NewPlayer({ setPlayers }) {
+export default function NewPlayer({ players, setPlayers, search }) {
     const [name, setName] = useState("");
     const [breed, setBreed] = useState("");
     const [status, setStatus] = useState("field");

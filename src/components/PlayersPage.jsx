@@ -16,19 +16,28 @@ export default function PlayersPage({
                 classes={["display-3", "text-center", "bg-black", "text-white"]}
             />
 
-            <NewPlayer setPlayers={setPlayers} />
+            <NewPlayer
+                players={players}
+                setPlayers={setPlayers}
+                search={search}
+            />
 
             <hr />
 
-            <Search search={search} setSearch={setSearch} />
+            <Search players={players} search={search} setSearch={setSearch} />
 
             <hr />
+
             <Title
                 text="Players"
                 classes={["display-6", "text-center", "bg-black", "text-white"]}
             />
 
-            <Players players={players} setPlayers={setPlayers} />
+            <Players
+                players={players}
+                setPlayers={setPlayers}
+                search={search}
+            />
         </>
     );
 }

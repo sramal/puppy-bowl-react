@@ -5,7 +5,6 @@ import PlayerPage from "./components/PlayerPage";
 
 function App() {
     const [players, setPlayers] = useState([]);
-    const [filteredPlayers, setfilteredPlayers] = useState([]);
     const [singlePlayer, setSinglePlayer] = useState(null);
     const [search, setSearch] = useState("");
 
